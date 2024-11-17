@@ -16,19 +16,19 @@ This project focuses on clustering analysis of the `USArrests` dataset, which co
 
 To determine the optimal number of clusters (k) for the K-means clustering, several techniques were used:
 
--- **Elbow Method**: This method involves plotting the within-cluster sum of squares (WCSS) against the number of clusters. The point where the decrease in WCSS begins to slow down (i.e., the "elbow") is considered the optimal value for k.
+ **Elbow Method**: This method involves plotting the within-cluster sum of squares (WCSS) against the number of clusters. The point where the decrease in WCSS begins to slow down (i.e., the "elbow") is considered the optimal value for k.
 
 <div align="center">
     <img src="https://github.com/user-attachments/assets/d2ebb77d-a480-4922-a4ae-b8054465776e" alt="Elbow Method" width="500"/>
 </div>
 
--- **Hartigan's Rule**: This rule helps to further verify the optimal number of clusters by calculating how much the within-cluster variation decreases when increasing the number of clusters. A significant decrease indicates a suitable number of clusters.
+ **Hartigan's Rule**: This rule helps to further verify the optimal number of clusters by calculating how much the within-cluster variation decreases when increasing the number of clusters. A significant decrease indicates a suitable number of clusters.
 
 <div align="center">
     <img src="https://github.com/user-attachments/assets/daadfd36-ea90-4f2e-b2be-bdfd21838164" alt="Hartigan's Rule" width="500"/>
 </div>
 
--- **NbClust Package**: The NbClust package was used to evaluate multiple cluster validity indices. It provided a recommendation of k = 4 based on the data.
+ **NbClust Package**: The NbClust package was used to evaluate multiple cluster validity indices. It provided a recommendation of k = 4 based on the data.
 
 <div align="center">
     <img src="https://github.com/user-attachments/assets/d90bcd63-6093-4019-8f0b-3d2757856614" alt="NbClust Package Output" width="500"/>
@@ -79,5 +79,3 @@ This clustering exercise highlighted the power of various clustering methods to 
 - **DBSCAN** added flexibility by identifying clusters without requiring the pre-specification of the number of clusters.
 
 The findings are useful for understanding how crime and urbanization are interrelated and how they differ from state to state, offering a basis for future research or policy discussions.
-
-**🖼️ [Image Placeholder: Comparison of clusters between methods]**
