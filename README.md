@@ -18,15 +18,21 @@ To determine the optimal number of clusters (k) for the K-means clustering, seve
 
 -- **Elbow Method**: This method involves plotting the within-cluster sum of squares (WCSS) against the number of clusters. The point where the decrease in WCSS begins to slow down (i.e., the "elbow") is considered the optimal value for k.
 
-![image](https://github.com/user-attachments/assets/d2ebb77d-a480-4922-a4ae-b8054465776e)
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/d2ebb77d-a480-4922-a4ae-b8054465776e" alt="Elbow Method" width="500"/>
+</div>
 
 -- **Hartigan's Rule**: This rule helps to further verify the optimal number of clusters by calculating how much the within-cluster variation decreases when increasing the number of clusters. A significant decrease indicates a suitable number of clusters.
 
-![image](https://github.com/user-attachments/assets/daadfd36-ea90-4f2e-b2be-bdfd21838164)
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/daadfd36-ea90-4f2e-b2be-bdfd21838164" alt="Hartigan's Rule" width="500"/>
+</div>
 
--- *NbClust Package**: The NbClust package was used to evaluate multiple cluster validity indices. It provided a recommendation of k = 4 based on the data.
+-- **NbClust Package**: The NbClust package was used to evaluate multiple cluster validity indices. It provided a recommendation of k = 4 based on the data.
 
-![image](https://github.com/user-attachments/assets/d90bcd63-6093-4019-8f0b-3d2757856614)
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/d90bcd63-6093-4019-8f0b-3d2757856614" alt="NbClust Package Output" width="500"/>
+</div>
 
 The final choice for k was determined to be 4, based on the consistent findings across these methods.
 
@@ -38,22 +44,25 @@ The final choice for k was determined to be 4, based on the consistent findings 
   - **Cluster 3**: Mixed crime rates.
   - **Cluster 4**: States with relatively higher crime rates.
 
-![image](https://github.com/user-attachments/assets/5d9cab63-636f-4dcc-b06a-a2da8b0d60f2)
-
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/5d9cab63-636f-4dcc-b06a-a2da8b0d60f2" alt="K-means Clustering Results" width="500"/>
+</div>
 
 ### 3. Hierarchical Clustering
 - **Approach**: Agglomerative, starting from individual points and combining them to form clusters.
 - **Results**: Initially proposed 4 clusters, with further subdivisions revealing intricate relationships between states.
 
-![image](https://github.com/user-attachments/assets/ea69025f-50c9-47e3-b440-0f4604e1eb9f)
-
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/ea69025f-50c9-47e3-b440-0f4604e1eb9f" alt="Hierarchical Clustering Dendrogram" width="500"/>
+</div>
 
 ### 4. DBSCAN Clustering
 - **Approach**: A density-based clustering method that identifies regions of high density and can capture clusters of arbitrary shapes.
 - **Results**: The clusters from DBSCAN were similar to K-means, but better captured outliers and irregular cluster shapes.
 
-![image](https://github.com/user-attachments/assets/bd7a3883-9252-4431-8e04-5afb24c0a30c)
-
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/bd7a3883-9252-4431-8e04-5afb24c0a30c" alt="DBSCAN Clustering Results" width="500"/>
+</div>
 
 ## 🔍 Key Findings
 - **Cluster Characteristics**:
